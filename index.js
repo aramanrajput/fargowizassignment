@@ -20,4 +20,4 @@ let connectdb = ()=>connect("mongodb://127.0.0.1:27017/fargo")
   })
 
   let userController=require("./src/controller/user.controller")
-  app.use("/user",userController)
+  app.use("/",userController)

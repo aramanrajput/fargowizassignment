@@ -4,7 +4,7 @@ import { useEffect ,useState} from 'react'
 const UserDetails = () => {
 let [data,setData]= useState([])
     useEffect(()=>{
-        fetch("http://localhost:8080/user").then((res)=>res.json()).then((res)=>{if(!res.error){
+        fetch("http://localhost:8080").then((res)=>res.json()).then((res)=>{if(!res.error){
             setData(res.data)
         }})
     },[])
